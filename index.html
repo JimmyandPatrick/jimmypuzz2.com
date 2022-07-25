@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+<style>
+body{background-color:black;color:white;text-align:center;font-family: 'Baloo 2', cursive;}
+*{text-align:center;font-family: 'Baloo 2', cursive;}
+.download{font-family: 'Saira', sans-serif;background-color:green;padding:2px 2px;color:white;border: 1px solid;border-color:white;border-radius:10px;text-decoration:none;transition: all .1s;}
+.download:active{background-color:cyan;transform:scale(0.5);}
+.tb{animation: tb 1s;background-color:white; color:black;}
+@keyframes tb{
+0%{background-color:black;color:white;}
+100%{background-color:white;color:black;}
+}
+</style>
+<script>
+function question(){
+var qstn = confirm('Are you sure you want this app?');
+if(qstn == false){
+window.location = "index.html";
+}
+}
+function ch(){
+document.getElementById('change').classList.add('tb');
+}
+</script>
+</head>
+<body id="change" >
+<h2 onclick="ch()"> Jimmys apps download page!</h2>
+<br>
+<h5> Jimmy text slider:</h5>
+<a class="download" onclick="question()" href="https://drive.google.com/file/d/10OvJGw8U10qvHTaaiFeHsSuuh7SXKcyP/view?usp=sharing">Download</a>
+<br><br>
+<h6> Jimmys apps, good apps!</h6>
